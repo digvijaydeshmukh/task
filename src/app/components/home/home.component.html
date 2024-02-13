@@ -1,0 +1,21 @@
+<div class="flex-container">
+    <div class="btn">
+        <button class="mrg" mat-raised-button (click)="fruitsExpansion()">Table 1</button>
+        <button class="mrg" mat-raised-button (click)="vegExpansion()">Table 2</button>
+        <button class="mrg" mat-raised-button (click)="fruitsClick()">Data 1</button>
+        <button class="mrg" mat-raised-button (click)="vegetablesClick()">Data 2</button>
+    </div>
+
+    <div class="row">
+        <div class="first">
+            <app-fruits *ngIf="fruitFlag || fruitExFlag" [fruitFlag]="fruitFlag" [fruitExFlag]="fruitExFlag"
+                [dataSource]="fruitData"></app-fruits>
+        </div>
+
+        <div class="first">
+            <app-veg *ngIf="vegetablesFlag || vegExFlag" [vegExFlag]="vegExFlag" [dataSource]="vegData"
+                [vegetablesFlag]="vegetablesFlag"></app-veg>
+        </div>
+    </div>
+
+</div>
