@@ -1,8 +1,6 @@
 <div *ngIf="vegExFlag" class="row">
     <div class="exp">
-        <div class="frbtn">
-            <button class="btnsty" (click)="openClose()">Vegetable</button>
-        </div>
+        <button class="btnsty" (click)="openClose()">Vegetable</button>
     </div>
 
     <table *ngIf="show" mat-table [dataSource]="dataSource" class="mat-elevation-z8">
