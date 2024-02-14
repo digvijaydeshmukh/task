@@ -14,7 +14,7 @@ export class VegComponent {
   @Input() dataSource: any;
   @Input() vegetablesFlag: any;
   @Input() vegExFlag: any
-  show = false;
+  show = true;
 
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
 

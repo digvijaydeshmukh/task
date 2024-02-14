@@ -1,8 +1,8 @@
-import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
 import { MatTableModule } from '@angular/material/table';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatGridListModule } from '@angular/material/grid-list';
+import { CommonModule } from '@angular/common';
 
 
 
@@ -17,7 +17,7 @@ export class fruitsComponent implements OnInit {
   @Input() dataSource: any;
   @Input() fruitFlag: any;
   @Input() fruitExFlag: any;
-  show = false;
+  show = true;
 
 
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];
