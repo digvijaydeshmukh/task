@@ -4,7 +4,7 @@
   padding: 0;
 }
 .exp{
-  border-radius: 40px;
+  border-radius: 25px;
   border: 2px solid #e0e0e0;
   margin: 10px;
   margin-left: 20px;
@@ -26,6 +26,14 @@
 
 .data1{
   width: 100%;
-  margin-right: 100px;
+  margin-right: 20px;
   padding: 10px;
+}
+
+.tableEX{
+  border: 2px solid red($color: #000000);
+}
+
+table{
+  width:430px;
 }
